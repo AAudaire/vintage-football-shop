@@ -11,7 +11,7 @@ export default function ProductCardImages({ images }: ProductCardImagesProps) {
   return (
     <div className="w-full max-w-[18rem] overflow-hidden">
       {images.length > 1 ? (
-        <div className="group relative h-64 overflow-hidden rounded-t-2xl bg-gray-50">
+        <div className="group relative h-64 overflow-hidden">
           <img
             src={images[0].url}
             alt={images[0].alt}
@@ -24,7 +24,7 @@ export default function ProductCardImages({ images }: ProductCardImagesProps) {
           />
         </div>
       ) : (
-        <div className="flex h-64 items-center justify-center rounded-t-2xl bg-gray-50">
+        <div className="flex h-64 items-center justify-center">
           <img
             src={images[0].url}
             alt={images[0].alt}
