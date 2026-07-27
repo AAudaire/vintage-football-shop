@@ -12,15 +12,17 @@ type ProductCardProps = {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <article className="w-full max-w-[18rem] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+    <article className="flex h-full w-full max-w-[15rem] flex-col overflow-hidden bg-transparent backdrop-blur-sm sm:max-w-[18rem]">
       <ProductCardImages images={product.images} />
-      <div className="p-5">
-        <h3 className="mb-2 text-lg text-gray-900">{product.name}</h3>
-        <div className="flex items-center justify-between">
-          <span className="text-lg font-bold text-gray-900">
+      <div className="flex flex-1 flex-col p-3 sm:p-5">
+        <h3 className="mb-2 text-sm text-gray-900 sm:text-lg">
+          {product.name}
+        </h3>
+        <div className="mt-auto flex items-center justify-between gap-2">
+          <span className="text-sm font-bold text-gray-900 sm:text-lg">
             {product.price}€
           </span>
-          <button className="rounded-full bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800">
+          <button className="rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-800 sm:px-4 sm:py-2 sm:text-sm">
             Ajouter
           </button>
         </div>
