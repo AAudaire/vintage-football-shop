@@ -9,7 +9,7 @@ export default function ProductCardImages({ images }: ProductCardImagesProps) {
     return null;
   }
   return (
-    <div className="w-full max-w-[18rem] overflow-hidden">
+    <div className="cursor-pointer w-full max-w-[18rem] overflow-hidden">
       {images.length > 1 ? (
         <div className="group relative h-64 overflow-hidden">
           <img
