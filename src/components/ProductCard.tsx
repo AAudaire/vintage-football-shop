@@ -22,7 +22,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <span className="text-sm font-bold text-gray-900 sm:text-lg">
             {product.price}€
           </span>
-          <button className="rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-800 sm:px-4 sm:py-2 sm:text-sm">
+          <button className="cursor-pointer rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-800 sm:px-4 sm:py-2 sm:text-sm">
             Ajouter
           </button>
         </div>
