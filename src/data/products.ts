@@ -4,9 +4,9 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Equipe de France - 2006 - Domicile - Zinedine Zidane",
-    price: 90,
     description:
       "Maillot de l'équipe de France 2006 floqué Zinedine Zidane, la dernière compétition de la légende, où il attendra un niveau exceptionel en emmenant son équipe jusqu'en finale face a l'italie. Malheureusement cette finale connaitra une fin triste pour le Z, avec le fameux coup de boule et la défaite de l'équipe de france.",
+    category: 1,
     images: [
       {
         url: "src\\assets\\Jersey\\Edf-2006-domicile-Zidane-1.jpg",
@@ -17,14 +17,67 @@ export const products: Product[] = [
         alt: "Maillot de l'équipe de France 2006 Zidane domicile dos",
       },
     ],
-    category: "Maillots",
+    variants: [
+      {
+        id: 101,
+        price: 90,
+        size: "S",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\Edf-2006-domicile-Zidane-1.jpg",
+            alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
+          },
+        ],
+        isDefault: true,
+      },
+      {
+        id: 102,
+        price: 90,
+        size: "M",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\Edf-2006-domicile-Zidane-1.jpg",
+            alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 103,
+        price: 90,
+        size: "L",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\Edf-2006-domicile-Zidane-1.jpg",
+            alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 104,
+        price: 90,
+        size: "XL",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\Edf-2006-domicile-Zidane-1.jpg",
+            alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+    ],
   },
   {
     id: 2,
     name: "AC Milan - 2009/2010 - Domicile -  Ronaldinho",
-    price: 85,
     description:
       "Maillot mythique de l'AC Milan 2009/2010 aux couleurs rouge et noir, floqué Ronaldinho. Un des plus beaux maillots de l'histoire du football avec le génie brésilien.",
+    category: 1,
     images: [
       {
         url: "src\\assets\\Jersey\\ACMilan-2009-domicile-Ronaldinho-1.jpg",
@@ -35,14 +88,54 @@ export const products: Product[] = [
         alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile dos",
       },
     ],
-    category: "Maillots",
+    variants: [
+      {
+        id: 201,
+        price: 85,
+        size: "M",
+        condition: "Parfait",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\ACMilan-2009-domicile-Ronaldinho-1.jpg",
+            alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face",
+          },
+        ],
+        isDefault: true,
+      },
+      {
+        id: 202,
+        price: 85,
+        size: "L",
+        condition: "Parfait",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\ACMilan-2009-domicile-Ronaldinho-1.jpg",
+            alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 203,
+        price: 85,
+        size: "XL",
+        condition: "Parfait",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\ACMilan-2009-domicile-Ronaldinho-1.jpg",
+            alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+    ],
   },
   {
     id: 3,
     name: "FC Barcelona - 2010/2011 - Domicile - Messi",
-    price: 95,
     description:
       "Maillot emblématique du FC Barcelona 2010/2011, floqué Lionel Messi. L'année de la Ligue des Champions remportée face à Manchester United.",
+    category: 1,
     images: [
       {
         url: "src\\assets\\Jersey\\FCBarcelona-2010-domicile-Messi-1.jpg",
@@ -53,14 +146,54 @@ export const products: Product[] = [
         alt: "Maillot du FC Barcelona 2010/2011 Messi domicile dos",
       },
     ],
-    category: "Maillots",
+    variants: [
+      {
+        id: 301,
+        price: 95,
+        size: "S",
+        condition: "Neuf",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\FCBarcelona-2010-domicile-Messi-1.jpg",
+            alt: "Maillot du FC Barcelona 2010/2011 Messi domicile face",
+          },
+        ],
+        isDefault: true,
+      },
+      {
+        id: 302,
+        price: 95,
+        size: "M",
+        condition: "Neuf",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\FCBarcelona-2010-domicile-Messi-1.jpg",
+            alt: "Maillot du FC Barcelona 2010/2011 Messi domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 303,
+        price: 95,
+        size: "L",
+        condition: "Neuf",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\FCBarcelona-2010-domicile-Messi-1.jpg",
+            alt: "Maillot du FC Barcelona 2010/2011 Messi domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+    ],
   },
   {
     id: 4,
     name: "Manchester United - 1998/2000 - Domicile - Beckham",
-    price: 88,
     description:
       "Maillot légendaire de Manchester United 1998/2000 floqué David Beckham. 2 saisons plus que réussies pour le Manchester de Sir Alex Ferguson avec 2 titres de Premier League, 1 FA Cup, 1 Ligue des Champions et 1 coupe intercontinentale ! David Beckham jouera 102 matchs pour 17 buts et 38 passes décisives.",
+    category: 1,
     images: [
       {
         url: "src\\assets\\Jersey\\ManU-1998-domicile-Beckham-1.jpg",
@@ -71,14 +204,54 @@ export const products: Product[] = [
         alt: "de Manchester United 1998/2000 Beckham domicile face",
       },
     ],
-    category: "Maillots",
+    variants: [
+      {
+        id: 401,
+        price: 88,
+        size: "M",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\ManU-1998-domicile-Beckham-1.jpg",
+            alt: "de Manchester United 1998/2000 Beckham domicile face",
+          },
+        ],
+        isDefault: true,
+      },
+      {
+        id: 402,
+        price: 88,
+        size: "L",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\ManU-1998-domicile-Beckham-1.jpg",
+            alt: "de Manchester United 1998/2000 Beckham domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 403,
+        price: 88,
+        size: "XL",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\ManU-1998-domicile-Beckham-1.jpg",
+            alt: "de Manchester United 1998/2000 Beckham domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+    ],
   },
   {
     id: 5,
     name: "Real Madrid - 2001/2002 - Domicile - Zidane",
-    price: 92,
     description:
       "Maillot blanc du Real Madrid 2001/2002 floqué Zinedine Zidane. L'année de la victoire en Ligue des Champions face au Bayer Leverkusen.",
+    category: 1,
     images: [
       {
         url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
@@ -89,20 +262,126 @@ export const products: Product[] = [
         alt: "Maillot du Real Madrid 2001/2002 Zidane domicile dos",
       },
     ],
-    category: "Maillots",
+    variants: [
+      {
+        id: 501,
+        price: 92,
+        size: "XS",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: true,
+      },
+      {
+        id: 502,
+        price: 92,
+        size: "S",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 503,
+        price: 92,
+        size: "M",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 504,
+        price: 92,
+        size: "L",
+        condition: "Très bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+    ],
   },
-    {
+  {
     id: 6,
     name: "Real Madrid - 2001/2002 - Domicile",
-    price: 60,
     description:
       "Maillot blanc du Real Madrid 2001/2002. L'année de la victoire en Ligue des Champions face au Bayer Leverkusen.",
+    category: 1,
     images: [
       {
         url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
         alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
       },
     ],
-    category: "Maillots",
+    variants: [
+      {
+        id: 601,
+        price: 60,
+        size: "S",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: true,
+      },
+      {
+        id: 602,
+        price: 60,
+        size: "M",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 603,
+        price: 60,
+        size: "L",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+      {
+        id: 604,
+        price: 60,
+        size: "XL",
+        condition: "Bon",
+        images: [
+          {
+            url: "src\\assets\\Jersey\\RealMadrid-2001-domicile-Zidane-1.jpg",
+            alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
+          },
+        ],
+        isDefault: false,
+      },
+    ],
   },
 ];

@@ -1,5 +1,6 @@
 import ProductCard from "../components/ProductCard";
 import { products } from "../data/products";
+import { mapProductToCardData } from "../utils/productCardMapper";
 
 export default function Featured() {
   return (
@@ -20,9 +21,14 @@ export default function Featured() {
       </header>
 
       <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+        {products.map((product) => {
+          return (
+            <ProductCard
+              key={product.id}
+              product={mapProductToCardData(product)}
+            />
+          );
+        })}
       </div>
     </section>
   );
