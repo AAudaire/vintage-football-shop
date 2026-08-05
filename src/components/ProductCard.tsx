@@ -6,6 +6,7 @@ type ProductCardProps = {
     id: number;
     name: string;
     price: number;
+    condition: string;
     images: ProductImage[];
   };
 };
@@ -18,6 +19,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         <h3 className="mb-2 text-sm text-gray-900 sm:text-lg">
           {product.name}
         </h3>
+        <p className="mb-3 text-xs font-medium uppercase tracking-wide text-green-800 sm:text-sm">
+          {product.condition}
+        </p>
         <div className="mt-auto flex items-center justify-between gap-2">
           <span className="text-sm font-bold text-gray-900 sm:text-lg">
             {product.price}€
