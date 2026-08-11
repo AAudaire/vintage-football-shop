@@ -4,6 +4,7 @@ import { getDefaultVariant } from "./defaultVariantHelper";
 
 export const defaultPrice = 0;
 export const unknownConditionLabel = "—";
+export const unknownSize = "—";
 export function mapProductToCardData(product: Product): ProductCardData {
   const defaultVariant = getDefaultVariant(product);
 
@@ -11,6 +12,7 @@ export function mapProductToCardData(product: Product): ProductCardData {
     id: product.id,
     name: product.name,
     price: defaultVariant?.price ?? defaultPrice,
+    size: defaultVariant?.size ?? unknownSize,
     condition: defaultVariant?.condition ?? unknownConditionLabel,
     images: product.images,
   };
