@@ -3,6 +3,7 @@ import {
   defaultPrice,
   mapProductToCardData,
   unknownConditionLabel,
+  unknownSize,
 } from "./productCardMapper";
 import type { Product } from "../types/product";
 
@@ -36,6 +37,7 @@ describe("mapProductToCardData", () => {
       id: product.id,
       name: product.name,
       price: 120,
+      size: "M",
       condition: "Excellent",
       images: product.images,
     });
@@ -53,6 +55,7 @@ describe("mapProductToCardData", () => {
       id: product.id,
       name: product.name,
       price: defaultPrice,
+      size: unknownSize,
       condition: unknownConditionLabel,
       images: product.images,
     });
