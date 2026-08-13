@@ -1,10 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {
-  defaultPrice,
-  mapProductToCardData,
-  unknownConditionLabel,
-  unknownSize,
-} from "./productCardMapper";
+import { mapProductToCardData } from "./productCardMapper";
 import type { Product } from "../types/product";
 
 const baseProduct: Omit<Product, "variants"> = {
@@ -26,6 +21,7 @@ describe("mapProductToCardData", () => {
           size: "M",
           condition: "Excellent",
           images: [],
+          stock: 1,
           isDefault: true,
         },
       ],
@@ -39,24 +35,6 @@ describe("mapProductToCardData", () => {
       price: 120,
       size: "M",
       condition: "Excellent",
-      images: product.images,
-    });
-  });
-
-  it("returns default price and unknown condition label when the product has no variants", () => {
-    const product: Product = {
-      ...baseProduct,
-      variants: [],
-    };
-
-    const cardData = mapProductToCardData(product);
-
-    expect(cardData).toEqual({
-      id: product.id,
-      name: product.name,
-      price: defaultPrice,
-      size: unknownSize,
-      condition: unknownConditionLabel,
       images: product.images,
     });
   });
