@@ -6,7 +6,6 @@ export function useProduct(productId: number): {
   product: Product | undefined;
   isLoading: boolean;
   error: Error | undefined;
-  refresh: () => Promise<void>;
 } {
   const [product, setProduct] = useState<Product | undefined>(undefined);
   const [isLoading, setIsLoading] = useState(true);
@@ -30,5 +29,5 @@ export function useProduct(productId: number): {
     fetchProduct();
   }, [fetchProduct]);
 
-  return { product, isLoading, error, refresh: fetchProduct };
+  return { product, isLoading, error };
 }

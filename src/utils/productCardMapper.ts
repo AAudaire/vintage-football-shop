@@ -8,6 +8,7 @@ export function mapProductToCardData(product: Product): ProductCardData {
   return {
     id: product.id,
     name: product.name,
+    variantId: defaultVariant.id,
     price: defaultVariant.price,
     size: defaultVariant.size,
     condition: defaultVariant.condition,

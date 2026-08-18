@@ -32,6 +32,7 @@ describe("mapProductToCardData", () => {
     expect(cardData).toEqual({
       id: product.id,
       name: product.name,
+      variantId: 101,
       price: 120,
       size: "M",
       condition: "Excellent",
