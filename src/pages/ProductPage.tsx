@@ -1,27 +1,30 @@
+import { useParams, useSearchParams } from "react-router-dom";
 import { useProduct } from "../hooks/useProduct";
 import type { ProductVariant } from "../types/productVariant";
 import { selectVariant } from "../utils/variantHelper";
 
-type ProductPageProps = {
-  productId: number;
-  variantId?: number;
-};
+export default function ProductPage() {
+  const params = useParams();
+  const [searchParams] = useSearchParams();
 
-export default function ProductPage({
-  productId,
-  variantId,
-}: ProductPageProps) {
+  const productId: number = Number(params.productId);
+  if (!productId) return <ProductNotFound />;
+  const paramVariantId = searchParams.get("variantId");
+  const variantId: number | undefined = paramVariantId
+    ? Number(paramVariantId)
+    : undefined;
+
   const { product, isLoading, error } = useProduct(productId);
 
   if (isLoading) return <div>Chargement...</div>;
-  if (error || !product) return <div>Produit introuvable</div>;
+  if (error || !product) return <ProductNotFound />;
 
   let selectedVariant: ProductVariant;
 
   try {
     selectedVariant = selectVariant(product, variantId);
   } catch (err) {
-    return <div>Produit introuvable</div>;
+    return <ProductNotFound />;
   }
 
   return (
@@ -33,4 +36,8 @@ export default function ProductPage({
       </p>
     </div>
   );
+}
+
+function ProductNotFound() {
+  return <div>Produit introuvable</div>;
 }

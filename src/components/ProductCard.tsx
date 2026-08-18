@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { ProductImage } from "../types/productImage";
 import ProductCardImages from "./ProductCardImages";
 
@@ -5,6 +6,7 @@ type ProductCardProps = {
   product: {
     id: number;
     name: string;
+    variantId: number;
     price: number;
     size: string;
     condition: string;
@@ -15,11 +17,15 @@ type ProductCardProps = {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="flex h-full w-full max-w-[15rem] flex-col overflow-hidden bg-transparent backdrop-blur-sm sm:max-w-[18rem]">
-      <ProductCardImages images={product.images} />
+      <Link to={`/product/${product.id}?variantId=${product.variantId}`}>
+        <ProductCardImages images={product.images} />
+      </Link>
       <div className="flex flex-1 flex-col p-3 sm:p-5">
-        <h3 className="mb-2 text-sm text-gray-900 sm:text-lg">
-          {product.name}
-        </h3>
+        <Link to={`/product/${product.id}?variantId=${product.variantId}`}>
+          <h3 className="mb-2 text-sm text-black sm:text-lg hover:text-gray-700 duration-200">
+            {product.name}
+          </h3>
+        </Link>
 
         <div className="mb-3 flex items-center gap-2 text-[10px] uppercase tracking-[0.12em] text-gray-500 sm:text-[10px]">
           <span className="font-medium text-emerald-700">
