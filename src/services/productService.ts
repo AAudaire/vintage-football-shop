@@ -7,6 +7,7 @@ export async function getProductById(id: number): Promise<Product> {
   return product;
 }
 
+//TODO créer serveur node qui mock appel api
 // export async function getProductById(id: number): Promise<Product> {
 //   const res = await fetch(`/api/products/${id}`);
 //   if (!res.ok) throw new Error("Failed to fetch product");
