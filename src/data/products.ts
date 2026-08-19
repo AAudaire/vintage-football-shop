@@ -29,6 +29,7 @@ export const products: Product[] = [
             alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: true,
       },
       {
@@ -42,6 +43,7 @@ export const products: Product[] = [
             alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -55,6 +57,7 @@ export const products: Product[] = [
             alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -68,6 +71,7 @@ export const products: Product[] = [
             alt: "Maillot de l'équipe de France 2006 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
     ],
@@ -100,6 +104,7 @@ export const products: Product[] = [
             alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face",
           },
         ],
+        stock: 1,
         isDefault: true,
       },
       {
@@ -113,6 +118,7 @@ export const products: Product[] = [
             alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -126,6 +132,7 @@ export const products: Product[] = [
             alt: "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
     ],
@@ -158,6 +165,7 @@ export const products: Product[] = [
             alt: "Maillot du FC Barcelona 2010/2011 Messi domicile face",
           },
         ],
+        stock: 1,
         isDefault: true,
       },
       {
@@ -171,6 +179,7 @@ export const products: Product[] = [
             alt: "Maillot du FC Barcelona 2010/2011 Messi domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -184,6 +193,7 @@ export const products: Product[] = [
             alt: "Maillot du FC Barcelona 2010/2011 Messi domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
     ],
@@ -216,6 +226,7 @@ export const products: Product[] = [
             alt: "de Manchester United 1998/2000 Beckham domicile face",
           },
         ],
+        stock: 1,
         isDefault: true,
       },
       {
@@ -229,6 +240,7 @@ export const products: Product[] = [
             alt: "de Manchester United 1998/2000 Beckham domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -242,6 +254,7 @@ export const products: Product[] = [
             alt: "de Manchester United 1998/2000 Beckham domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
     ],
@@ -274,6 +287,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: true,
       },
       {
@@ -287,6 +301,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -300,6 +315,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
       {
@@ -313,6 +329,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
     ],
@@ -341,6 +358,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: true,
       },
       {
@@ -354,6 +372,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 0,
         isDefault: false,
       },
       {
@@ -367,6 +386,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 5,
         isDefault: false,
       },
       {
@@ -380,6 +400,7 @@ export const products: Product[] = [
             alt: "Maillot du Real Madrid 2001/2002 Zidane domicile face",
           },
         ],
+        stock: 1,
         isDefault: false,
       },
     ],
