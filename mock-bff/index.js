@@ -7,9 +7,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from mock-bff/public under /images
+// Serve static files from mock-bff/public
 const publicDir = path.join(__dirname, "public");
-app.use("/images", express.static(publicDir));
+app.use(express.static(publicDir));
 
 function rewriteImagePaths(obj, baseUrl) {
   if (obj == null) return obj;
@@ -18,15 +18,9 @@ function rewriteImagePaths(obj, baseUrl) {
     const out = {};
     for (const k of Object.keys(obj)) {
       const v = obj[k];
-      if (k === "url" && typeof v === "string") {
-        // normalize separators and strip leading src/assets or src\assets
-        let p = v
-          .replace(/\\/g, "/")
-          .replace(/.*src\/assets\//i, "")
-          .replace(/^\//, "");
-        // normalize common folder names: Jersey -> jerseys
-        p = p.replace(/^Jersey\//i, "jerseys/");
-        out[k] = `${baseUrl}/images/${p}`;
+      if (k === "url" && typeof v === "string" && !/^https?:\/\//i.test(v)) {
+        const p = v.replace(/\\/g, "/").replace(/^\/+/, "");
+        out[k] = `${baseUrl}/${p}`;
       } else {
         out[k] = rewriteImagePaths(v, baseUrl);
       }
@@ -103,8 +97,7 @@ app.get(["/bff/*"], async (req, res) => {
   const mock = findMockResponseFor(req);
   if (mock !== null) {
     const base = `${req.protocol}://${req.get("host")}`;
-    const rewritten = rewriteImagePaths(mock, base);
-    return res.json(rewritten);
+    return res.json(rewriteImagePaths(mock, base));
   }
 
   // fallback to upstream if configured
@@ -112,8 +105,9 @@ app.get(["/bff/*"], async (req, res) => {
     const upstream = await fetchFromUpstream(req.path);
     if (upstream && upstream.data !== undefined) {
       const base = `${req.protocol}://${req.get("host")}`;
-      const rewritten = rewriteImagePaths(upstream.data, base);
-      return res.status(upstream.status).json(rewritten);
+      return res
+        .status(upstream.status)
+        .json(rewriteImagePaths(upstream.data, base));
     }
     if (upstream && upstream.status && upstream.status !== 200)
       return res.sendStatus(upstream.status);
