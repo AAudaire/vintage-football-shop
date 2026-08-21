@@ -1,0 +1,108 @@
+{
+  "productCards": [
+    {
+      "id": 1,
+      "name": "Equipe de France - 2006 - Domicile - Zinedine Zidane",
+      "variantId": 101,
+      "price": 90,
+      "size": "S",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/Edf-2006-domicile-Zidane-1.jpg",
+          "alt": "Maillot de l'équipe de France 2006 Zidane domicile face"
+        },
+        {
+          "url": "jerseys/Edf-2006-domicile-Zidane-2.jpg",
+          "alt": "Maillot de l'équipe de France 2006 Zidane domicile dos"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "AC Milan - 2009/2010 - Domicile -  Ronaldinho",
+      "variantId": 201,
+      "price": 85,
+      "size": "M",
+      "condition": "Parfait",
+      "images": [
+        {
+          "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-1.jpg",
+          "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face"
+        },
+        {
+          "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-2.jpg",
+          "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile dos"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "FC Barcelona - 2010/2011 - Domicile - Messi",
+      "variantId": 301,
+      "price": 95,
+      "size": "S",
+      "condition": "Neuf",
+      "images": [
+        {
+          "url": "jerseys/FCBarcelona-2010-domicile-Messi-1.jpg",
+          "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile face"
+        },
+        {
+          "url": "jerseys/FCBarcelona-2010-domicile-Messi-2.jpg",
+          "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile dos"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Manchester United - 1998/2000 - Domicile - Beckham",
+      "variantId": 401,
+      "price": 88,
+      "size": "M",
+      "condition": "Bon",
+      "images": [
+        {
+          "url": "jerseys/ManU-1998-domicile-Beckham-1.jpg",
+          "alt": "de Manchester United 1998/2000 Beckham domicile face"
+        },
+        {
+          "url": "jerseys/ManU-1998-domicile-Beckham-2.jpg",
+          "alt": "de Manchester United 1998/2000 Beckham domicile face"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Real Madrid - 2001/2002 - Domicile - Zidane",
+      "variantId": 501,
+      "price": 92,
+      "size": "XS",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+        },
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-2.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile dos"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Real Madrid - 2001/2002 - Domicile",
+      "variantId": 601,
+      "price": 60,
+      "size": "S",
+      "condition": "Bon",
+      "images": [
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+        }
+      ]
+    }
+  ]
+}
