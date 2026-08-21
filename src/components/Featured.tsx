@@ -1,5 +1,4 @@
 import ProductCard from "../components/ProductCard";
-import { products } from "../data/products";
 import { mapProductToCardData } from "../utils/productCardMapper";
 
 export default function Featured() {
