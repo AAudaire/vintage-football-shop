@@ -1,8 +1,74 @@
 {
   "id": 1,
   "name": "Equipe de France - 2006 - Domicile - Zinedine Zidane",
-  "description": "Maillot de l'équipe de France 2006 floqué Zinedine Zidane.",
+  "description": "Maillot de l'équipe de France 2006 floqué Zinedine Zidane, la dernière compétition de la légende, où il attendra un niveau exceptionel en emmenant son équipe jusqu'en finale face a l'italie. Malheureusement cette finale connaitra une fin triste pour le Z, avec le fameux coup de boule et la défaite de l'équipe de france.",
   "category": 1,
-  "images": [],
-  "variants": []
+  "images": [
+    {
+      "url": "jerseys/Edf-2006-domicile-Zidane-1.jpg",
+      "alt": "Maillot de l'équipe de France 2006 Zidane domicile face"
+    },
+    {
+      "url": "jerseys/Edf-2006-domicile-Zidane-2.jpg",
+      "alt": "Maillot de l'équipe de France 2006 Zidane domicile dos"
+    }
+  ],
+  "variants": [
+    {
+      "id": 101,
+      "price": 90,
+      "size": "S",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/Edf-2006-domicile-Zidane-1.jpg",
+          "alt": "Maillot de l'équipe de France 2006 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": true
+    },
+    {
+      "id": 102,
+      "price": 90,
+      "size": "M",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/Edf-2006-domicile-Zidane-1.jpg",
+          "alt": "Maillot de l'équipe de France 2006 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    },
+    {
+      "id": 103,
+      "price": 90,
+      "size": "L",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/Edf-2006-domicile-Zidane-1.jpg",
+          "alt": "Maillot de l'équipe de France 2006 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    },
+    {
+      "id": 104,
+      "price": 90,
+      "size": "XL",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/Edf-2006-domicile-Zidane-1.jpg",
+          "alt": "Maillot de l'équipe de France 2006 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    }
+  ]
 }
