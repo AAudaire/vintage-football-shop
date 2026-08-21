@@ -1,0 +1,74 @@
+{
+  "id": 5,
+  "name": "Real Madrid - 2001/2002 - Domicile - Zidane",
+  "description": "Maillot blanc du Real Madrid 2001/2002 floqué Zinedine Zidane. L'année de la victoire en Ligue des Champions face au Bayer Leverkusen.",
+  "category": 1,
+  "images": [
+    {
+      "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+      "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+    },
+    {
+      "url": "jerseys/RealMadrid-2001-domicile-Zidane-2.jpg",
+      "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile dos"
+    }
+  ],
+  "variants": [
+    {
+      "id": 501,
+      "price": 92,
+      "size": "XS",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": true
+    },
+    {
+      "id": 502,
+      "price": 92,
+      "size": "S",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    },
+    {
+      "id": 503,
+      "price": 92,
+      "size": "M",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    },
+    {
+      "id": 504,
+      "price": 92,
+      "size": "L",
+      "condition": "Très bon",
+      "images": [
+        {
+          "url": "jerseys/RealMadrid-2001-domicile-Zidane-1.jpg",
+          "alt": "Maillot du Real Madrid 2001/2002 Zidane domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    }
+  ]
+}

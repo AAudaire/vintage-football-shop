@@ -1,8 +1,60 @@
 {
   "id": 2,
-  "name": "AC Milan - 2009/2010 - Domicile - Ronaldinho",
-  "description": "Maillot mythique de l'AC Milan 2009/2010.",
+  "name": "AC Milan - 2009/2010 - Domicile -  Ronaldinho",
+  "description": "Maillot mythique de l'AC Milan 2009/2010 aux couleurs rouge et noir, floqué Ronaldinho. Un des plus beaux maillots de l'histoire du football avec le génie brésilien.",
   "category": 1,
-  "images": [],
-  "variants": []
+  "images": [
+    {
+      "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-1.jpg",
+      "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face"
+    },
+    {
+      "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-2.jpg",
+      "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile dos"
+    }
+  ],
+  "variants": [
+    {
+      "id": 201,
+      "price": 85,
+      "size": "M",
+      "condition": "Parfait",
+      "images": [
+        {
+          "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-1.jpg",
+          "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": true
+    },
+    {
+      "id": 202,
+      "price": 85,
+      "size": "L",
+      "condition": "Parfait",
+      "images": [
+        {
+          "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-1.jpg",
+          "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    },
+    {
+      "id": 203,
+      "price": 85,
+      "size": "XL",
+      "condition": "Parfait",
+      "images": [
+        {
+          "url": "jerseys/ACMilan-2009-domicile-Ronaldinho-1.jpg",
+          "alt": "Maillot de l'AC Milan 2009/2010 Ronaldinho domicile face"
+        }
+      ],
+      "stock": 1,
+      "isDefault": false
+    }
+  ]
 }
