@@ -2,7 +2,7 @@ import type { ProductImage } from "./productImage";
 
 export type ProductVariant = {
   id: number;
-  price: number;
+  price: string;
   size: string;
   condition: string;
   images: ProductImage[];
