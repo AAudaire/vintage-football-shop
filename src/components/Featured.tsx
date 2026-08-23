@@ -1,9 +1,10 @@
 import ProductCard from "../components/ProductCard";
 import { useFeaturedProducts } from "../hooks/useFeaturedProducts";
+import Loader from "./Loader";
 
 export default function Featured() {
   const { featuredProducts, isLoading, error } = useFeaturedProducts();
-  if (isLoading) return <div>Chargement...</div>;
+  if (isLoading) return <Loader />;
   if (
     error ||
     !featuredProducts ||

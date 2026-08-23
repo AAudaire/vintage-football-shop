@@ -3,26 +3,21 @@
   "name": "FC Barcelona - 2010/2011 - Domicile - Messi",
   "description": "Maillot emblématique du FC Barcelona 2010/2011, floqué Lionel Messi. L'année de la Ligue des Champions remportée face à Manchester United.",
   "category": 1,
-  "images": [
-    {
-      "url": "jerseys/FCBarcelona-2010-domicile-Messi-1.jpg",
-      "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile face"
-    },
-    {
-      "url": "jerseys/FCBarcelona-2010-domicile-Messi-2.jpg",
-      "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile dos"
-    }
-  ],
+
   "variants": [
     {
       "id": 301,
-      "price": 95,
+      "price": "95€",
       "size": "S",
       "condition": "Neuf",
       "images": [
         {
           "url": "jerseys/FCBarcelona-2010-domicile-Messi-1.jpg",
           "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile face"
+        },
+        {
+          "url": "jerseys/FCBarcelona-2010-domicile-Messi-2.jpg",
+          "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile dos"
         }
       ],
       "stock": 1,
@@ -30,13 +25,17 @@
     },
     {
       "id": 302,
-      "price": 95,
+      "price": "95€",
       "size": "M",
       "condition": "Neuf",
       "images": [
         {
           "url": "jerseys/FCBarcelona-2010-domicile-Messi-1.jpg",
           "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile face"
+        },
+        {
+          "url": "jerseys/FCBarcelona-2010-domicile-Messi-2.jpg",
+          "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile dos"
         }
       ],
       "stock": 1,
@@ -44,13 +43,17 @@
     },
     {
       "id": 303,
-      "price": 95,
+      "price": "95€",
       "size": "L",
       "condition": "Neuf",
       "images": [
         {
           "url": "jerseys/FCBarcelona-2010-domicile-Messi-1.jpg",
           "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile face"
+        },
+        {
+          "url": "jerseys/FCBarcelona-2010-domicile-Messi-2.jpg",
+          "alt": "Maillot du FC Barcelona 2010/2011 Messi domicile dos"
         }
       ],
       "stock": 1,

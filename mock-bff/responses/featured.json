@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Equipe de France - 2006 - Domicile - Zinedine Zidane",
       "variantId": 101,
-      "price": 90,
+      "price": "90€",
       "size": "S",
       "condition": "Très bon",
       "images": [
@@ -22,7 +22,7 @@
       "id": 2,
       "name": "AC Milan - 2009/2010 - Domicile -  Ronaldinho",
       "variantId": 201,
-      "price": 85,
+      "price": "85€",
       "size": "M",
       "condition": "Parfait",
       "images": [
@@ -40,7 +40,7 @@
       "id": 3,
       "name": "FC Barcelona - 2010/2011 - Domicile - Messi",
       "variantId": 301,
-      "price": 95,
+      "price": "95€",
       "size": "S",
       "condition": "Neuf",
       "images": [
@@ -58,7 +58,7 @@
       "id": 4,
       "name": "Manchester United - 1998/2000 - Domicile - Beckham",
       "variantId": 401,
-      "price": 88,
+      "price": "88€",
       "size": "M",
       "condition": "Bon",
       "images": [
@@ -76,7 +76,7 @@
       "id": 5,
       "name": "Real Madrid - 2001/2002 - Domicile - Zidane",
       "variantId": 501,
-      "price": 92,
+      "price": "92€",
       "size": "XS",
       "condition": "Très bon",
       "images": [
@@ -94,7 +94,7 @@
       "id": 6,
       "name": "Real Madrid - 2001/2002 - Domicile",
       "variantId": 601,
-      "price": 60,
+      "price": "60€",
       "size": "S",
       "condition": "Bon",
       "images": [

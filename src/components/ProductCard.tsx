@@ -7,7 +7,7 @@ type ProductCardProps = {
     id: number;
     name: string;
     variantId: number;
-    price: number;
+    price: string;
     size: string;
     condition: string;
     images: ProductImage[];
@@ -37,7 +37,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <div className="mt-auto flex items-center justify-between gap-2">
           <span className="text-sm font-bold text-gray-900 sm:text-lg">
-            {product.price}€
+            {product.price}
           </span>
           <button className="cursor-pointer rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-800 sm:px-4 sm:py-2 sm:text-sm">
             Ajouter
