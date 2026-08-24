@@ -7,7 +7,7 @@
   "variants": [
     {
       "id": 501,
-      "price": 92,
+      "price": "92€",
       "size": "XS",
       "condition": "Très bon",
       "images": [
@@ -25,7 +25,7 @@
     },
     {
       "id": 502,
-      "price": 92,
+      "price": "92€",
       "size": "S",
       "condition": "Très bon",
       "images": [
@@ -43,7 +43,7 @@
     },
     {
       "id": 503,
-      "price": 92,
+      "price": "92€",
       "size": "M",
       "condition": "Très bon",
       "images": [
@@ -61,7 +61,7 @@
     },
     {
       "id": 504,
-      "price": 92,
+      "price": "92€",
       "size": "L",
       "condition": "Très bon",
       "images": [

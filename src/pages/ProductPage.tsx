@@ -5,6 +5,10 @@ import { selectVariant } from "../utils/variantHelper";
 import Loader from "../components/Loader";
 import ProductGallery from "../components/ProductGallery";
 import ProductInfo from "../components/ProductInfo";
+import ProductDescription from "../components/ProductDescription";
+import ProductVariantSelector, {
+  MapVariantsProps,
+} from "../components/ProductVariantSelector";
 
 export default function ProductPage() {
   const params: Readonly<Params<string>> = useParams();
@@ -30,24 +34,21 @@ export default function ProductPage() {
     return <ProductNotFound />;
   }
 
-  // return (
-  //   <div className="mx-auto max-w-7xl px-4 py-8">
-  //     <ProductGallery images={selectedVariant.images} />
-  //     <ProductInfo name={product.name} price={selectedVariant.price} />
-  //     {/* <ProductVariantSelector product={product} />
-  //     <AddToCartButton variant={selectedVariant} />
-  //     <ProductDescription product={product} /> */}
-  //   </div>
-  // );
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 py-12">
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        <ProductGallery images={selectedVariant.images} />
-        <ProductInfo
-          name={product.name}
-          price={selectedVariant.price}
-          stock={selectedVariant.stock}
-        />
+        <section className="lg:col-span-7">
+          <ProductGallery images={selectedVariant.images} />
+        </section>
+        <section className="lg:col-span-5 flex flex-col gap-8 lg:sticky lg:top-8">
+          <ProductInfo name={product.name} />
+          <ProductVariantSelector
+            selectedVariant={selectedVariant}
+            variants={MapVariantsProps(product.variants)}
+          />
+          {/* <AddToCartButton variant={selectedVariant} /> */}
+          <ProductDescription description={product.description} />
+        </section>
       </div>
     </div>
   );
