@@ -63,6 +63,15 @@ function readProductById(id) {
   return null;
 }
 
+function readProductEndpointById(id, endpoint) {
+  const filePath = path.join(responsesDir, String(id), `${endpoint}.json`);
+
+  const data = readJsonSafe(filePath);
+  if (data !== null) return data;
+
+  return null;
+}
+
 app.get("/products", (req, res) => {
   const base = `${req.protocol}://${req.get("host")}`;
   const products = readProductList();
@@ -95,6 +104,16 @@ app.get("/products/:id", (req, res) => {
   }
 
   return res.json(rewriteImagePaths(product, base));
+});
+
+app.get("/products/:id/:endpoint", (req, res) => {
+  const result = readProductEndpointById(req.params.id, req.params.endpoint);
+
+  if (!result) {
+    return res.status(404).json({ message: "Product not found" });
+  }
+
+  return res.json(result);
 });
 
 const port = process.env.PORT || 4100;

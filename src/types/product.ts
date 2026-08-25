@@ -1,3 +1,4 @@
+import type { ProductSize } from "./productSize";
 import type { ProductVariant } from "./productVariant";
 
 export type Product = {
@@ -6,4 +7,5 @@ export type Product = {
   description: string;
   category: number;
   variants: ProductVariant[];
+  sizes: ProductSize[];
 };

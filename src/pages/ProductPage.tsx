@@ -45,6 +45,7 @@ export default function ProductPage() {
           <ProductVariantSelector
             selectedVariant={selectedVariant}
             variants={MapVariantsProps(product.variants)}
+            sizes={product.sizes}
           />
           {/* <AddToCartButton variant={selectedVariant} /> */}
           <ProductDescription description={product.description} />

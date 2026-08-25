@@ -1,11 +1,9 @@
 import type { ProductCondition } from "./productCondition";
 import type { ProductImage } from "./productImage";
-import type { ProductSize } from "./productSize";
-
 export type ProductVariant = {
   id: number;
   price: string;
-  size: ProductSize;
+  sizeId: number;
   condition: ProductCondition;
   images: ProductImage[];
   stock: number;

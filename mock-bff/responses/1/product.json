@@ -7,11 +7,7 @@
     {
       "id": 101,
       "price": "65€",
-      "size": {
-        "id": 2,
-        "label": "S",
-        "order": 2
-      },
+      "sizeId": 2,
       "condition": {
         "id": 4,
         "label": "Bon",
@@ -33,11 +29,7 @@
     {
       "id": 102,
       "price": "75€",
-      "size": {
-        "id": 3,
-        "label": "M",
-        "order": 3
-      },
+      "sizeId": 3,
       "condition": {
         "id": 3,
         "label": "Très bon",
@@ -59,11 +51,7 @@
     {
       "id": 103,
       "price": "90€",
-      "size": {
-        "id": 5,
-        "label": "XL",
-        "order": 5
-      },
+      "sizeId": 5,
       "condition": {
         "id": 2,
         "label": "Parfait",
@@ -79,17 +67,13 @@
           "alt": "Maillot de l'équipe de France 2006 Zidane domicile dos"
         }
       ],
-      "stock": 1,
+      "stock": 0,
       "isDefault": false
     },
     {
       "id": 104,
       "price": "100€",
-      "size": {
-        "id": 4,
-        "label": "L",
-        "order": 4
-      },
+      "sizeId": 4,
       "condition": {
         "id": 1,
         "label": "Neuf",
@@ -111,11 +95,7 @@
     {
       "id": 105,
       "price": "90€",
-      "size": {
-        "id": 4,
-        "label": "L",
-        "order": 4
-      },
+      "sizeId": 4,
       "condition": {
         "id": 2,
         "label": "Parfait",
@@ -131,8 +111,34 @@
           "alt": "Maillot de l'équipe de France 2006 Zidane domicile dos"
         }
       ],
-      "stock": 1,
+      "stock": 0,
       "isDefault": false
+    }
+  ],
+  "sizes": [
+    {
+      "id": 2,
+      "label": "S",
+      "order": 2,
+      "stock": 1
+    },
+    {
+      "id": 3,
+      "label": "M",
+      "order": 3,
+      "stock": 1
+    },
+    {
+      "id": 4,
+      "label": "L",
+      "order": 4,
+      "stock": 1
+    },
+    {
+      "id": 5,
+      "label": "XL",
+      "order": 5,
+      "stock": 0
     }
   ]
 }
