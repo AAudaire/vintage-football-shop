@@ -1,4 +1,3 @@
-import { useState } from "react";
 import type { ProductCondition } from "../types/productCondition";
 import type { ProductSize } from "../types/productSize";
 import type { ProductVariant } from "../types/productVariant";
@@ -32,22 +31,11 @@ export default function ProductVariantSelector({
 }: ProductVariantSelectorProps) {
   const sizes: ProductSize[] = [
     ...new Map(variants.map((v) => [v.size.id, v.size])).values(),
-  ];
+  ].sort((a, b) => a.order - b.order);
   const selectedSizeId: number = selectedVariant.size.id;
-  const sameSizeVariants: VariantItem[] = variants.filter(
-    (variant) => variant.size.id == selectedSizeId,
-  );
-  const conditions: {
-    condition: ProductCondition;
-    price: string;
-  }[] = [
-    ...new Map(
-      sameSizeVariants.map((v) => [
-        v.condition.id,
-        { condition: v.condition, price: v.price },
-      ]),
-    ).values(),
-  ];
+  const sizeOffers: VariantItem[] = variants
+    .filter((variant) => variant.size.id === selectedSizeId)
+    .sort((a, b) => a.condition.order - b.condition.order);
 
   return (
     <div className="space-y-6">
@@ -60,34 +48,17 @@ export default function ProductVariantSelector({
         <div className="flex flex-wrap gap-2">
           {sizes.map((size) => (
             <button
-              id="{size.id}"
+              key={size.id}
               type="button"
-              className="min-w-[3.5rem] rounded-lg border border-neutral-900 bg-neutral-900 px-4 py-2.5 text-sm font-medium text-white transition-colors"
+              className={`cursor-pointer min-w-[3.5rem] rounded-lg border px-4 py-2.5 text-sm font-medium transition-colors ${
+                size.id === selectedSizeId
+                  ? "border-neutral-900 bg-neutral-900 text-white"
+                  : "border-neutral-200 bg-white text-neutral-700 hover:border-neutral-900"
+              }`}
             >
               {size.label}
             </button>
           ))}
-
-          <button
-            type="button"
-            className="min-w-[3.5rem] rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-700 transition-colors hover:border-neutral-900 hover:text-neutral-900"
-          >
-            S
-          </button>
-
-          <button
-            type="button"
-            className="min-w-[3.5rem] rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-700 transition-colors hover:border-neutral-900 hover:text-neutral-900"
-          >
-            M
-          </button>
-
-          <button
-            type="button"
-            className="min-w-[3.5rem] rounded-lg border border-neutral-200 bg-white px-4 py-2.5 text-sm font-medium text-neutral-700 transition-colors hover:border-neutral-900 hover:text-neutral-900"
-          >
-            L
-          </button>
         </div>
       </div>
 
@@ -96,25 +67,35 @@ export default function ProductVariantSelector({
         <h4 className="text-sm font-medium text-neutral-900">État</h4>
 
         <div className="grid grid-cols-1 gap-2">
-          <button
-            type="button"
-            className="flex items-center justify-between rounded-lg border border-neutral-900 bg-neutral-50 px-4 py-3 text-left transition-colors"
-          >
-            <span className="text-sm font-medium text-neutral-900">
-              Très bon état
-            </span>
-            <span className="text-sm font-semibold text-neutral-900">90€</span>
-          </button>
-
-          <button
-            type="button"
-            className="flex items-center justify-between rounded-lg border border-neutral-200 bg-white px-4 py-3 text-left transition-colors hover:border-neutral-900"
-          >
-            <span className="text-sm font-medium text-neutral-700">
-              Bon état
-            </span>
-            <span className="text-sm font-semibold text-neutral-900">75€</span>
-          </button>
+          {sizeOffers.map((sizeOffer) =>
+            sizeOffer.id === selectedVariant.id ? (
+              <button
+                key={sizeOffer.id}
+                type="button"
+                className="cursor-pointer flex items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors border-neutral-900 bg-neutral-50"
+              >
+                <span className="text-sm font-medium text-neutral-900">
+                  {sizeOffer.condition.label}
+                </span>
+                <span className="text-sm font-semibold text-neutral-900">
+                  {sizeOffer.price}
+                </span>
+              </button>
+            ) : (
+              <button
+                key={sizeOffer.id}
+                type="button"
+                className="cursor-pointer flex items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors border-neutral-200 bg-white hover:border-neutral-900"
+              >
+                <span className="text-sm font-medium text-neutral-700">
+                  {sizeOffer.condition.label}
+                </span>
+                <span className="text-sm font-semibold text-neutral-700">
+                  {sizeOffer.price}
+                </span>
+              </button>
+            ),
+          )}
         </div>
       </div>
     </div>
